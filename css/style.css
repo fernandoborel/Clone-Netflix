@@ -8,6 +8,27 @@ body{
     color: #fff;
 }
 
+.header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1790px;
+    top: 28px;
+    left: 56px;
+}
+
+.header a{
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    align-self: flex-start;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
 .main{
     height: 785px;
     background: url(../assets/img/bg.jpg) center;
@@ -25,16 +46,48 @@ body{
 }
 
 .main h1{
-    font-size: 64px;
-    max-width: 510px;
+    font-size: 3.125rem;
+    max-width: 700px;
 }
 
 .main span{
     font-size: 26px;
+    margin: 1rem auto;
 }
 
 .main p{
     font-size: 19px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 500px 200px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form-cta input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.form-cta button{
+    background: #e50914;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.form-cta button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url(../assets/img/seta.svg);
+    margin-left: 15px;
 }
 
 .gradient{
