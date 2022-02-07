@@ -20,11 +20,21 @@ body{
 
 .main-child{
     z-index: 1;
+    display: grid;
+    justify-items: center;
 }
 
 .main h1{
     font-size: 64px;
     max-width: 510px;
+}
+
+.main span{
+    font-size: 26px;
+}
+
+.main p{
+    font-size: 19px;
 }
 
 .gradient{
