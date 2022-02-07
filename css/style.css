@@ -1,4 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: black;
+    font-family: sans-serif;
     color: #fff;
+}
+
+.main{
+    height: 785px;
+    background: url(../assets/img/bg.jpg) center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-child{
+    z-index: 1;
+}
+
+.main h1{
+    font-size: 64px;
+    max-width: 510px;
+}
+
+.gradient{
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,rgba(0,0,0,0.8)
+         0,rgba(0,0,0,0) 60%, 
+         rgba(0,0,0,0.8) 100%
+        );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
