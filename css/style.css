@@ -172,3 +172,82 @@ img{
 .kids .img-tv{
     order: 1;
 }
+
+/*acordeon list*/
+.faq{
+    width: 100%;
+}
+
+.faq h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.faq-list{
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+
+.faq-question,
+.faq-answer{
+    background: #303030;
+}
+
+.faq-question{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+.faq-question::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/img/fechar.svg) no-repeat center center;
+    transform: rotate(45deg);
+}
+
+.faq-question .active::after{
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-answer > div{
+    padding: 30px;
+}
+
+.faq-answer.active{
+    max-height: 1200px;
+}
+
+/*Fim acordeon list*/
+
+.footer{
+    padding: 4rem 0 2rem 0;
+    background-color: #000;
+    text-align: center;
+    border-top: 8px solid #222;
+    display: grid;
+    justify-items: center;
+}
+
+.footer p{
+    font-size: 19px;
+}
+
+/*Responsivo*/
+
+@media (max-width: 800px) {
+
+}
