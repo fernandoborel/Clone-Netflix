@@ -211,9 +211,10 @@ img{
     height: 20px;
     background: url(../assets/img/fechar.svg) no-repeat center center;
     transform: rotate(45deg);
+    transition: 200ms;
 }
 
-.faq-question .active::after{
+.faq-question.active::after{
     transform: rotate(0deg);
 }
 
@@ -249,5 +250,66 @@ img{
 /*Responsivo*/
 
 @media (max-width: 800px) {
+    .header{
+        padding: 0 15px;
+    }
+
+    .header img{
+        max-width: 90px;
+    }
+
+    .header a{
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .main{
+        height: 500px;
+    }
+
+    .main h1{
+        font-size: 28px;
+    }
+
+    .main span,
+    .main p{
+        width: 80vw;
+    }
+
+    .main span{
+        margin-top: 16px;
+        font-size: 18px;
+    }
+
+    .main p{
+        margin-top: 10px;
+    }
+
+    .form-cta{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 10px;
+        max-width: 80vw;
+    }
+
+    .form-cta input{
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .form-cta button{
+        font-size: 16px;
+        justify-self: center;
+        padding: 4px 16px 8px 16px;
+        border-radius: 2px;
+    }
+
+    .form-cta button::after{
+        margin-left: 5px;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 6px 12px;
+    }
 
 }
