@@ -312,4 +312,42 @@ img{
         background-size: 6px 12px;
     }
 
+    section h1,
+    .section p{
+        text-align: center;
+    }
+
+    section h1{
+        font-size: 26px;
+    }
+
+    .section p{
+        font-size: 18px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .faq-list{
+        margin-top: 22px;
+    }
+
+    .faq-question,
+    .faq-answer{
+        font-size: 18px;
+    }
+
+    .faq-question{
+        padding: 16px 22px;
+    }
+
+    .faq-question::after{
+        background-size: 15px;
+    }
+
+    .faq-answer > div{
+        padding: 21px;
+    }
+
 }
